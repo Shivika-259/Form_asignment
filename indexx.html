@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Registration Form</h2>
+    <p>Enter your details below</p>
+    <form action="post" target="_blank">
+      <div>
+        <ul>
+          <li class="li1"><input type="email" required placeholder="Email" name="email" value="your_email@gmail.com">
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li class="li2"><input type="password" required placeholder="Password" name="Password" minlength="8"
+              maxlength="20"></li>
+        </ul>
+      </div>
+      <div>
+        <h5>
+          <p>!Type a complex password with 8-20 characters.</p>
+        </h5>
+        <ul>
+          <li class="li3"><input type="number" required placeholder="+20 Phone Number" name="Phone Number"></li>
+
+        </ul>
+      </div>
+      <div>
+        <h4>Enter your Profession</h4>
+        <ul>
+          <li class="li4"><input type="radio" name="profession" value="Student">
+            <label for="Student">Student</label>
+            <input type="radio" name="profession" value="Teacher">
+            <label for="Teacher">Teacher</label>
+            <input type="radio" name="profession" value="Developer">
+            <label for="Developer">Developer</label>
+          </li>
+        </ul>
+      </div>
+      <label for="stage">Choose the stage if you are (Student)</label>
+      <select>
+        <option value="first primary">First primary</option>
+        <option value="second primary">Second primary</option>
+        <option value="third primary">Third primary</option>
+        <option value="fourth primary">Fourth primary</option>
+        <option value="fifth primary">Fifth primary</option>
+        <option value="sixth primary">Sixth primary</option>
+      </select>
+      <hr>
+      <div>
+        <ul>
+          <li class="li5">
+            <label for="d">Enter your Birth date.</label>
+            <input type="date" name="date" id="d" />
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <div>
+        <ul>
+          <li class="li6">
+            <input type="text" placeholder="Anynotes" name="Nots" />
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <input type="submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </div>
+</body>
+
+</html>
